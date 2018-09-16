@@ -1,0 +1,55 @@
+1. 下载 vue-cli 是脚手架命令行工具，给我们提供一个vue工程的模板
+2  vue init webpack study-vue 创建 study-vue 项目 
+3 熟悉目录结构
+}-- study-vue 
+  |-- bulid 项目打包文件
+  |--config 配置文件
+  |--node_modules 第三方包依赖文件
+  |--src 原代码文件
+  |--static 静态资源
+  |--babelrc 
+  |--editorconfig
+  |--eslintignore
+  |--eslintrc.js
+  |--.gitignore 存储时忽略文件
+  |--.postcssrc
+  |--index.html
+  |--package-lock.json
+  |--package.json 
+  |--README.md  项目介绍
+4. 单文件组件：.vue 后缀结尾的文件
+Vue.Component('yml-table', {
+    props: [],
+    template: '<div>xx</div>',
+})
+.vue 结尾的文件实际上也是写一个组件，但是看起来更加清晰
+<template></template>     这里写html
+<script></script>         这里写js
+<style></style>            这里写css
+
+5. 单页应用和多页应用
+多页应用：每次请求一个页面，都要发送一个http请求，返回的都是html文件，优点是浏览器渲染比较快，缺点是页面切换速度慢；
+单页应用：切换页面或者路由变化不会向后端发送请求，都是vue在浏览器端通过js渲染改变视图，优点是页面变换速度快，缺点是第一次加载页面速度慢。
+
+6. meta
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+width=device-width    
+initial-scale=1.0          网页初始化大小是1
+minimum-scale=1.0          在手机缩放网页最小，比例还是1.0
+maximum-scale=1.0          在手机缩放网页最大，比例还是1.0     
+user-scalable=no           用户不能缩放
+
+7. 不同手机，对html的样式处理是不一样的 reset.css 这个就是统一样式。
+
+8. 不同手机的分辨率不一样，存在二倍频 三倍频，显示的边框不一样，border.css是在不同倍频下显示的边框是统一的。
+
+9. 在移动端点击链接会有300毫秒的延迟，通过 fastclick 处理延迟问题
+首先要 npm install fastclick --save    
+
+
+
+
+
+initialization      n. 初始化
+application   n.应用 程序
