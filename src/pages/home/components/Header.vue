@@ -30,27 +30,22 @@ export default {
     .left
         width: .64rem
         .back
-            position:relative
+            position: relative
             left: 8px
     .input
-        flex:1
-        border-radius:5px
-        position:relative
+        flex: calc(100vw - 1.88rem)
+        border-radius: 5px
+        position: relative
         .sou
-            height:.64rem
-            width: 4.36rem
-            background:#fff
+            height: .64rem
+            width: 95%
+            background: #fff
             border-radius: 5px
-            margin-left:5px
-            margin-right:5px
-            padding-left:18px
-            padding-right:4px
             font-size: 12px
-            position:absolute
-            bottom:6px
-            right:5px
+            box-sizing: border-box
+            padding-left: 20px
         .seek
-            float:left 
+            position:absolute
             color:black 
             position:absolute
             left:3px
