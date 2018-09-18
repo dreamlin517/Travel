@@ -47,6 +47,37 @@ user-scalable=no           用户不能缩放
 9. 在移动端点击链接会有300毫秒的延迟，通过 fastclick 处理延迟问题
 首先要 npm install fastclick --save    
 
+10. stylus  CSS预处理器
+.container 
+  font-size: 20px
+  border: 1px solid red
+不用写花括弧，也不用在每个属性后面写分号了，还有其它一些有用的语法，等等。上面那三行代码不是 css 代码，在浏览器中直接运行是会报错的。
+CSS 处理器就会将上面的语法翻译成 css 代码，如：
+.container {
+  font-size: 20px;
+  border: 1px solid red;
+}
+CSS 处理器不止有 stylus、还有 less、sass 等等。它们有什么区别呢？？共同点是都能将符合自己语法的代码翻译成 css 代码，不同点是各自的语法不一样。
+普通 css 文件长什么样子：xxxx.css
+stylus预处理文件长什么样子：xxx.styl
+less预处理文件长什么样子：xxxx.less
+
+stylus 在 vue 中怎么用？
+使用前先安装 stylus：$ npm install stylus stylus-loader
+lang="stylus" 表示 CSS 预处理器用 stylus，scoped 表示样式只对当前 .vue 文件有效
+<style lang="stylus" scoped>
+.header
+    color: red
+</style>
+
+11. rem 和 em
+rem 是相对根元素 html 的 font-size 计算尺寸的
+em 是相对父级元素的 font-size 计算尺寸的
+
+12. iconfont 图标
+http://www.iconfont.cn/
+怎么选购图标？？
+在 vue 里怎么用？？
 
 
 

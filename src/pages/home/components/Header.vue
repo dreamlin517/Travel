@@ -1,17 +1,12 @@
 <template>
   <div>
-    <header></header> 
+    this is  header
   </div>
 </template>
 
 <script>
-import Header from '@/pages/home/components/Header';
-
 export default {
-  name: 'Home',
-  components: {
-    Header,
-  },
+  name: 'Header',
 };
 </script>
 
