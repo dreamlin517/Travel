@@ -25,6 +25,8 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    "no-console":0,
+    'import/no-extraneous-dependencies': 0,
     'indent': 0,
     'no-trailing-spaces': 0,
     'eol-last': 0,

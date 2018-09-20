@@ -79,8 +79,31 @@ http://www.iconfont.cn/
 怎么选购图标？？
 在 vue 里怎么用？？
 
+13. 分支
+master 分支。主分支，保证随时随地都能把代码跑起来
+feature-swiper 分支。新开发一个功能点，新建一个分支，这个分支每天开发完代码都往远程仓库提交一遍，此时功能可能还没有完全开发完，往远程仓库提交的代码
+可能是会出错的。
 
+git pull    将远程仓库的新创建的分支拉到本地
+git checkout <branchName>    切换分支
+git branch      查看本地git仓库有哪些分支，切当前处于哪个分支上
 
+14. 轮播组件
 
 initialization      n. 初始化
 application   n.应用 程序
+
+15. vue 里特殊写法
+:options="swiperOption"         是            v-bind:options="swiperOption"          的简写
+@someSwiperEvent="callback"     是            v-on:click="callback"                  的简写
+
+16. div 只知道宽度，高度根据宽高比设置
+width: 100%;
+height: 0;
+padding-bottom: 37%;
+overflow: hidden;
+
+img 元素只要给宽度值，高度会根据原图的宽高比自动设置值的
+
+
+去哪儿手机网页：http://piao.qunar.com/touch/
