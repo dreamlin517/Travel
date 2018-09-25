@@ -21,10 +21,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
+ @import '../../../assets/css/varibles.styl'
 .header
     display: flex
     line-height: .86rem
-    background: #00bcd4
+    background: $bgColor
     color: #fff
     
     .left

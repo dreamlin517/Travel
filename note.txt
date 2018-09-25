@@ -34,7 +34,7 @@ Vue.Component('yml-table', {
 6. meta
 <meta name="viewport" content="width=device-width,
 initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-width=device-width    
+width=device-width         宽度等于设备宽度
 initial-scale=1.0          网页初始化大小是1
 minimum-scale=1.0          在手机缩放网页最小，比例还是1.0
 maximum-scale=1.0          在手机缩放网页最大，比例还是1.0     
