@@ -96,30 +96,31 @@ export default {
 }
 .icons >>> .swiper-pagination-bullet-active
     background #fff
+.icons
+    margin-top .1rem
+    .icon {
+        overflow: hidden;
+        position: relative;
+        height: 0;
+        padding-bottom: 25%;
+        width: 25%;
+        float: left;
 
-.icon {
-    overflow: hidden;
-    position: relative;
-    height: 0;
-    padding-bottom: 25%;
-    width: 25%;
-    float: left;
+        .icon-img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0.44rem;
+            text-align: center;
+            line-height: 100%;
 
-    .icon-img {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0.44rem;
-        text-align: center;
-        line-height: 100%;
-
-        .icon-img-content {
-            height: 100%;
-            position: relative;
-            top: 0.08rem;
-        }
+            .icon-img-content {
+                height: 100%;
+                position: relative;
+                top: 0.08rem;
+            }
 
         .icon-img-desc {
             margin: 0;
